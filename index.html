@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+
+    <!-- This ia a style sheet use to style this form -->
+    <link rel="stylesheet" href="form style .css" />
+  </head>
+  <body>
+    <!-- starting a div tag help to design this form -->
+    <div>
+      <!-- form -->
+      <form action="">
+        <!-- heading -->
+        <h1>User Registration Form</h1>
+
+        <br />
+
+        <label
+          >First name :
+          <input
+            type="text"
+            name="First name :"
+            placeholder="Syed Mubashir"
+            maxlength="20"
+            required
+          />
+        </label>
+
+        <br /><br />
+
+        <label
+          >Last name :
+          <input
+            type="text"
+            name="Last name :"
+            placeholder="Ahmed"
+            maxlength="10"
+          />
+        </label>
+
+        <br /><br />
+
+        <fieldset id="fs">
+          <legend>Gender</legend>
+          <input type="radio" name="Gender" id="Male" />
+          <label for="Male">Male</label>
+          <br />
+          <input type="radio" name="Gender" id="Female" />
+          <label for="Female">Female</label>
+          <br />
+          <input type="radio" name="Gender" id="Other" />
+          <label for="Other">Other</label>
+        </fieldset>
+
+        <br />
+
+        <fieldset id="fs">
+          <legend>Interest</legend>
+          <input type="checkbox" name="Interest" id="Music" />
+          <label for="Music">Music</label>
+          <br />
+
+          <input type="checkbox" name="Interest" id="Sports" />
+          <label for="Sports">Sports</label>
+          <br />
+
+          <input type="checkbox" name="Interest" id="Reading" />
+          <label for="Reading">Reading</label>
+          <br />
+        </fieldset>
+
+        <br />
+
+        <label title="Date Of Birth"
+          >DOB : <br />
+          <input type="date" name="DOB" />
+        </label>
+
+        <br /><br />
+
+        <label for="Country">Country :</label>
+        <br />
+
+        <select name="Country" id="">
+          <option value="Pakistan">Pakistan</option>
+          <option value="India">India</option>
+          <option value="Canada">Canada</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="Dubai">Dubai</option>
+        </select>
+
+        <br /><br />
+
+        <label
+          >Phone Number :
+          <input
+            type="number"
+            name="Phone Number "
+            placeholder="0000-0000-000"
+            maxlength="12"
+            pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}"
+          />
+        </label>
+
+        <br /><br />
+
+        <label
+          >Email : <br />
+          <input
+            type="email"
+            name="Email :"
+            placeholder="abc@mail.com"
+            maxlength="20"
+            required
+          />
+        </label>
+
+        <br /><br />
+
+        <label
+          >Password :
+          <input
+            type="password"
+            name="Password :"
+            placeholder="*******"
+            maxlength="20"
+            title="3 num 3letter 1special character"
+            required
+          />
+        </label>
+
+        <br /><br />
+
+        <label
+          >Website : <br />
+          <input
+            type="url"
+            name="Website :"
+            placeholder="link"
+            title="Enter Your Git Link"
+          />
+        </label>
+
+        <br /><br />
+
+        <label
+          >Search : <br />
+          <input type="search" name="Search :" placeholder="search" />
+        </label>
+
+        <br /><br />
+
+        <label for="Prefered Colors">Preferred Colors</label>
+        <select name="Preferred Colors" id="">
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Green">Green</option>
+        </select>
+
+        <br /><br />
+
+        <label for="Cnic Pic"
+          >Cnic Pic :
+          <input type="file" />
+        </label>
+
+        <br /><br />
+
+        <label for="Bio">Feedback about my form :</label><br />
+        <textarea
+          name=""
+          id=""
+          cols="100%"
+          rows="10"
+          placeholder="write here"
+        ></textarea>
+
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
